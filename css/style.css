@@ -605,9 +605,9 @@ button {
 
 .footer {
   background-image: url('../img/footer.webp');
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 420px;
   margin: 40px 0 20px;
 }
