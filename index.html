@@ -105,6 +105,34 @@
 
   <div class="divider container"></div>
 
+  <section class="video">
+    <div class="container">
+      <div class="video__wrapper">
+        <video
+          class="video__player"
+          poster="img/poster.webp"
+          preload="metadata"
+          playsinline
+        >
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        </video>
+        <button class="video__play" aria-label="Play video">
+          <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40.625 39.6771V68.6563C40.625 70.7326 41.5729 72.3125 43.4688 73.3958C45.3646 74.4792 47.2153 74.3889 49.0208 73.125L71.5 58.7708C73.2153 57.6875 74.0729 56.1528 74.0729 54.1667C74.0729 52.1806 73.2153 50.6458 71.5 49.5625L49.0208 35.2083C47.2153 33.9444 45.3646 33.8542 43.4688 34.9375C41.5729 36.0208 40.625 37.6007 40.625 39.6771ZM54.1667 108.333C46.6736 108.333 39.6319 106.911 33.0417 104.065C26.4514 101.223 20.7188 97.3646 15.8438 92.4896C10.9688 87.6146 7.11028 81.8819 4.26833 75.2917C1.42278 68.7014 0 61.6597 0 54.1667C0 46.6736 1.42278 39.6319 4.26833 33.0417C7.11028 26.4514 10.9688 20.7188 15.8438 15.8438C20.7188 10.9688 26.4514 7.10847 33.0417 4.26292C39.6319 1.42097 46.6736 0 54.1667 0C61.6597 0 68.7014 1.42097 75.2917 4.26292C81.8819 7.10847 87.6146 10.9688 92.4896 15.8438C97.3646 20.7188 101.223 26.4514 104.065 33.0417C106.911 39.6319 108.333 46.6736 108.333 54.1667C108.333 61.6597 106.911 68.7014 104.065 75.2917C101.223 81.8819 97.3646 87.6146 92.4896 92.4896C87.6146 97.3646 81.8819 101.223 75.2917 104.065C68.7014 106.911 61.6597 108.333 54.1667 108.333Z" fill="rgba(255,255,255,0.85)"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__overlay"></div>
+    <div class="cta__content container">
+      <h2 class="cta__title">Send us your review about our products!</h2>
+      <a href="#" class="cta__btn">Send!</a>
+    </div>
+  </section>
+
   <footer class="footer"></footer>
   <script src="js/main.js" defer></script>
 </body>
