@@ -102,3 +102,172 @@ button {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+/* HEADER */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #33333399;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  gap: 16px;
+}
+
+@media (min-width: 1025px) {
+  .header__inner {
+    height: 80px;
+    gap: 48px;
+  }
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo__img {
+  width: 120px;
+  height: auto;
+}
+
+@media (min-width: 1025px) {
+  .logo__img {
+    width: 160px;
+  }
+}
+
+/* NAV — hide phone */
+
+.header__nav {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: rgba(33, 33, 33, 0.97);
+  padding: 24px 24px 32px;
+  z-index: 99;
+}
+
+.header__nav.is-open {
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nav__link {
+  display: block;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: opacity 0.2s;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+@media (min-width: 1025px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    position: static;
+    background: none;
+    padding: 0;
+    margin-left: auto;
+    z-index: auto;
+    width: auto;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav__link {
+    display: inline;
+    padding: 0;
+    font-size: 18px;
+    border-bottom: none;
+  }
+}
+
+/* ACTIONS */
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+@media (min-width: 1025px) {
+  .header__actions {
+    margin-left: 0;
+  }
+}
+
+.header__btn {
+  color: #fff;
+  background: #FFFFFF33;
+  width: 34px;
+  height: 33px;
+  border-radius: 74px;
+  padding: 6px;
+  transition: opacity 0.2s;
+}
+
+.header__btn:hover {
+  opacity: 0.75;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.burger__line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger[aria-expanded="true"] .burger__line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger[aria-expanded="true"] .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger[aria-expanded="true"] .burger__line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (min-width: 1025px) {
+  .burger {
+    display: none;
+  }
+}
